@@ -1315,7 +1315,6 @@ window.onload = function () {
     const mySwiper = new Swiper('.implemented-container', {
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 20,
         effect: 'fade',
         fadeEffect: {
             crossFade: true,
@@ -1338,10 +1337,7 @@ window.onload = function () {
     });
 
     const secondSwiper = new Swiper('.swiper-second__container', {
-        loop: true,
-        freeMode: true,
         slidesPerView: 3,
-        variableWidth: true,
         spaceBetween: 125,
         navigation: {
             nextEl: '.main-control__button-next',
@@ -1353,7 +1349,12 @@ window.onload = function () {
 // Перемещение блока
 const rightPanelPoints = document.querySelector('.right-panel__points');
 const leftPanel = document.querySelector('.left-panel');
-let windowsWidth = window.innerWidth
+let windowsWidth = window.innerWidth;
+
+
+
+
 if (windowsWidth <= 768) {
-    rightPanelPoints.after(leftPanel)
-}
+    rightPanelPoints.after(leftPanel);
+};
+

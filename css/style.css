@@ -1893,6 +1893,7 @@ body.ie ._ibg img {
 }
 
 .swiper-slide .right-panel {
+  width: 800px;
   color: #13284f;
 }
 
@@ -2163,21 +2164,13 @@ body.ie ._ibg img {
   margin: 0px auto 0px 0px;
 }
 
-.certificates__swiper {
-  min-width: 0;
-}
-
-.swiper-second {
-  min-width: 0;
-}
-
 .swiper-second__wrapper {
-  visibility: visible;
   margin-bottom: 50px;
 }
 
 .swiper-second__slide {
-  width: auto;
+  height: 500px;
+  width: 350px;
 }
 
 .swiper-second__images {
